@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour
 
     public void SetPalyerName(string s)
     {
-        SaveManager.Instance.playerName = s;
+        if(SaveManager.Instance!=null)
+            SaveManager.Instance.playerName = s;
+        Debug.Log("palyer name : "+SaveManager.Instance.playerName.ToString());
     }
 }
