@@ -39,13 +39,13 @@ public class CaptureFlag : MonoBehaviour
        
     }
 
+    // ABSTRACTION
     private IEnumerator ChangeEngineColour(Color startColor, Color endColor)
     {
         float tick = 0f;
         while (lampRenderer.material.color != endColor && tick<2)
         {
             tick += Time.deltaTime * speed;
-            Debug.Log(tick);
             lampRenderer.material.color = Color.Lerp(startColor, endColor, tick);
             yield return null;
         }
