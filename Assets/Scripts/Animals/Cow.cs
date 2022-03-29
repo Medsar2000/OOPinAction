@@ -21,6 +21,12 @@ public class Cow : Animal
     // Update is called once per frame
     void Update()
     {
+        // POLYMORPHISM
+        growOld();
+        walk();
+        die();
+       
+        Debug.Log(health);
         
     }
 }
