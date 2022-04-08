@@ -15,10 +15,14 @@ public class Cat : Animal
     }
 
     // POLYMORPHISM
-    public override void walk()
+    void Update()
     {
-        
-        base.walk();
+        // POLYMORPHISM
+        growOld();
+        walk();
+        die();
+
+        //Debug.Log(health);
     }
 
 }

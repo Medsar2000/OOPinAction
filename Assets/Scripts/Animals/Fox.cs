@@ -7,7 +7,7 @@ public class Fox : Animal
     Fox()
     {
         foodType = AnimalType.Carnivorous;
-        health = 58;
+        health = 4;
         speed = 7;
         power = 4;
 
@@ -21,6 +21,11 @@ public class Fox : Animal
     // Update is called once per frame
     void Update()
     {
-        
+        // POLYMORPHISM
+        growOld();
+        walk();
+        die();
+
+        //Debug.Log(health);
     }
 }

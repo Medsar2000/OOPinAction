@@ -26,7 +26,6 @@ public class Cow : Animal
         walk();
         die();
        
-        Debug.Log(health);
-        
+        //Debug.Log(health);
     }
 }

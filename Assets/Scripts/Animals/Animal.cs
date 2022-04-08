@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Animal : MonoBehaviour
 {
     // ENCAPSULATION
-    protected AnimalType foodType;
+    public AnimalType foodType;
     protected float health;
     protected float power;
     protected float speed;
@@ -13,7 +13,8 @@ public abstract class Animal : MonoBehaviour
     // POLYMORPHISM
     public virtual void walk()
     {
-        //transform.position = Vector3.MoveTowards(transform.position,)
+        transform.LookAt(Vector3.zero);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
     }
 

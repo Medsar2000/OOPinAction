@@ -6,7 +6,7 @@ public class Dog : Animal
 {
     Dog()
     {
-        foodType = AnimalType.Vegetarian;
+        foodType = AnimalType.Carnivorous;
         health = 4;
         speed = 6;
         power = 4;
@@ -21,6 +21,11 @@ public class Dog : Animal
     // Update is called once per frame
     void Update()
     {
-        
+        // POLYMORPHISM
+        growOld();
+        walk();
+        die();
+
+        //Debug.Log(health);
     }
 }
